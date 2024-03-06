@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: "joindevops/mongodb:{{ .Values.statefulset.imageVersion }}"
+        image: medapareddy/mongodb:v1
         volumeMounts:
         - name: mongodb
           mountPath: /data/db
