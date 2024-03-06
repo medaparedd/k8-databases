@@ -133,7 +133,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: mrdapareddy/web:v1
+        image: medapareddy/web:v1
         imagePullPolicy: Always
         resources:
           requests:
