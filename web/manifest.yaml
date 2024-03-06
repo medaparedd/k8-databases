@@ -205,7 +205,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: "roboshop.daws76s.online"
+  - host: "roboshop.daws74s.online"
     http:
       paths:
       - pathType: Prefix
