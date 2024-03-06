@@ -16,4 +16,4 @@ kind: ConfigMap
 metadata:
   name: aws-auth
   namespace: kube-system
-  uid: 974b5f3f-c267-4a29-80f2-e38d2d561546
+  uid: 6a196901-b3c2-445b-80aa-1f4c708bf53d
