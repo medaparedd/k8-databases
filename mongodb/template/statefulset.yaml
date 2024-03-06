@@ -14,7 +14,7 @@ spec:
       project: roboshop
       tier: db
   serviceName: "mongodb"
-  replicas: 2
+  replicas: {{ .Values.statefulset.replicas }}
   template:
     metadata:
       labels:
@@ -24,12 +24,10 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: medapareddy/mongodb:v1
+        image: "joindevops/mongodb:{{ .Values.statefulset.imageVersion }}"
         volumeMounts:
         - name: mongodb
           mountPath: /data/db
-      nodeSelector:
-        zone: 1a
   volumeClaimTemplates:
   - metadata:
       name: mongodb
